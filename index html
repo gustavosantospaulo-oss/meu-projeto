@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agrinho 2026: EcoNutri Paraná</title>
     <style>
         body { 
@@ -11,6 +12,7 @@
             margin: 0;
             padding: 0; 
         }
+        
         .topo-site {
             background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1625246333195-78d9c38ad451?q=80&w=1200');
             background-size: cover; 
@@ -19,6 +21,16 @@
             text-align: center;
             padding: 60px 20px;
         }
+
+        .info-concurso {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
         .conteudo { 
             max-width: 800px; 
             margin: 30px auto; 
@@ -27,16 +39,35 @@
             border-radius: 8px; 
             box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
         }
-        .lista-pilares {
-            margin: 20px 0;
-            padding-left: 20px;
-            line-height: 1.8;
+
+        h2 {
+            color: #1b5e20;
+            border-bottom: 2px solid #81c784;
+            padding-bottom: 8px;
         }
-        .lista-pilares li {
-            margin-bottom: 10px;
+
+        .autor {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 20px;
         }
+
+        .secao-info {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .destaque-objetivo {
+            background-color: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            border-radius: 0 4px 4px 0;
+            margin: 15px 0;
+        }
+
         .botao-projeto {
-            background-color: #2e7d32; 
+            display: block;
+            background-color: #ff9800; 
             color: white; 
             border: none; 
             padding: 12px 30px; 
@@ -45,13 +76,46 @@
             border-radius: 30px; 
             cursor: pointer; 
             transition: transform 0.3s ease, background-color 0.3s ease; 
-            margin-top: 15px;
-            display: inline-block;
+            margin: 25px auto 0 auto;
         }
+        
         .botao-projeto:hover { 
-            background-color: #1b5e20; 
-            transform: scale(1.05) translateY(-2px); 
+            background-color: #e65100; 
+            transform: scale(1.05) translateY(-3px); 
         }
     </style>
 </head>
 <body>
+
+    <header class="topo-site">
+        <h1>EcoNutri Paraná</h1>
+        <p>Tecnologia e Sustentabilidade na Produção de Alimentos</p>
+    </header>
+
+    <div class="info-concurso">
+        Tema: Agro Forte, Futuro Sustentável • Concurso Agrinho 2026 • Categoria: 9º Ano
+    </div>
+
+    <div class="conteudo">
+        <h2>Projeto: EcoNutri Paraná</h2>
+        <p class="autor"><strong>Desenvolvido por:</strong> Paulo Gustavo dos Santos</p>
+
+        <div class="secao-info destaque-objetivo">
+            <strong>🎯 Objetivo:</strong><br>
+            Otimizar o uso de água e fertilizantes orgânicos na produção local de alimentos no Paraná, utilizando sensores automatizados de baixo custo para evitar o desperdício de recursos, combater a degradação do solo e garantir uma colheita mais saudável e sustentável.
+        </div>
+
+        <div class="secao-info">
+            <strong>📝 Descrição do Projeto:</strong><br>
+            <p>O <strong>EcoNutri Paraná</strong> é uma solução prática voltada para a agricultura familiar e para o pequeno produtor paranaense. Alinhado com o tema <em>"Agro Forte, Futuro Sustentável"</em> do Agrinho 2026, o sistema utiliza sensores conectados à internet para monitorar a umidade e a quantidade de nutrientes do solo em tempo real.</p>
+            
+            <p>Com esses dados, o agricultor sabe exatamente quando e quanto irrigar, além de aplicar adubação na medida certa. Isso reduz drasticamente o consumo de água, evita a contaminação de lençóis freáticos por excesso de insumos e aumenta a produtividade de alimentos de forma 100% ecológica.</p>
+        </div>
+
+        <button class="botao-projeto" onclick="alert('Obrigado pelo apoio ao projeto do Paulo Gustavo!')">
+            Apoiar essa Ideia
+        </button>
+    </div>
+
+</body>
+</html>
